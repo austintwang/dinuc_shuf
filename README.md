@@ -1,8 +1,12 @@
 # dinuc_shuf
 
-A minimal Python package to dinucleotide-shuffle one-hot-encoded sequences.
+This Python package provides a minimal and efficient implementation for performing dinucleotide shuffles on one-hot-encoded sequences.
 
-A dinucleotide shuffle preserves the dinucleotide (doublet) frequencies of the input sequence while randomizing the order of the dinucleotides. This is useful for generating compositionally-matched random sequences. To ensure a uniform random sample across all possible shuffles, this implementation utilizes [Colburn et al.](https://doi.org/10.1006/jagm.1996.0014)'s rank-one-update Kirchhoff matrix algorithm to sample random arborescences on the dinucleotide transition graph, coupled with a random Eulerian walk.
+Dinucleotide shuffling preserves the dinucleotide (nucleotide pair) frequencies of the input sequence while randomizing the order of the pairs. This is particularly useful for generating random sequences that match the compositional properties of the original input.
+
+To ensure a uniform random sample from all possible shuffles, the algorithm leverages the rank-one-update Kirchhoff matrix method described by [Colburn et al.](https://doi.org/10.1006/jagm.1996.0014) for sampling random arborescences, combined with a random Eulerian walk on the dinucleotide transition graph. The core algorithm is implemented in Rust for performance, with Python bindings for easy integration.
+
+This package is lightweight, requiring only a single dependency on Numpy.
 
 ## Installation
 

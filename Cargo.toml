@@ -1,0 +1,17 @@
+[package]
+name = "dinuc_shuf"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "dinuc_shuf"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.23.3"
+num = "0.4.3"
+ndarray = "0.16.1"
+nalgebra = "0.33.2"
+rand = "0.9.0-beta.1"
+rand_pcg = "0.9.0-beta.1"
+numpy = "0.23"

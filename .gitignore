@@ -1,0 +1,7 @@
+/target
+__pycache__
+*.pyc
+.conda
+/old
+*.so
+.DS_Store

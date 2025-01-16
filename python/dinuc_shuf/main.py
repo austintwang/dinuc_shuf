@@ -11,7 +11,7 @@ def shuffle(seqs: np.ndarray, rng: Optional[np.random.Generator] = None, verify:
     Parameters
     ----------
     seqs : np.ndarray
-        A three-dimensional array of one-hot-encoded sequences with shape (num_seqs, seq_len, alphabet_size).
+        A three-dimensional array of one-hot-encoded sequences with shape (num_seqs, seq_len, alphabet_size). Will be cast to np.uint8 if not already so.
     rng : Optional[np.random.Generator], optional
         A NumPy random number generator instance. If None, a new default generator instance will be used.
     verify : bool, optional

@@ -84,7 +84,7 @@ dinuc_shuf    </h1>
 </span><span id="shuffle-12"><a href="#shuffle-12"><span class="linenos">12</span></a><span class="sd">    Parameters</span>
 </span><span id="shuffle-13"><a href="#shuffle-13"><span class="linenos">13</span></a><span class="sd">    ----------</span>
 </span><span id="shuffle-14"><a href="#shuffle-14"><span class="linenos">14</span></a><span class="sd">    seqs : np.ndarray</span>
-</span><span id="shuffle-15"><a href="#shuffle-15"><span class="linenos">15</span></a><span class="sd">        A three-dimensional array of one-hot-encoded sequences with shape (num_seqs, seq_len, alphabet_size).</span>
+</span><span id="shuffle-15"><a href="#shuffle-15"><span class="linenos">15</span></a><span class="sd">        A three-dimensional array of one-hot-encoded sequences with shape (num_seqs, seq_len, alphabet_size). Will be cast to np.uint8 if not already so.</span>
 </span><span id="shuffle-16"><a href="#shuffle-16"><span class="linenos">16</span></a><span class="sd">    rng : Optional[np.random.Generator], optional</span>
 </span><span id="shuffle-17"><a href="#shuffle-17"><span class="linenos">17</span></a><span class="sd">        A NumPy random number generator instance. If None, a new default generator instance will be used.</span>
 </span><span id="shuffle-18"><a href="#shuffle-18"><span class="linenos">18</span></a><span class="sd">    verify : bool, optional</span>
@@ -134,7 +134,7 @@ dinuc_shuf    </h1>
 
 <ul>
 <li><strong>seqs</strong> (np.ndarray):
-A three-dimensional array of one-hot-encoded sequences with shape (num_seqs, seq_len, alphabet_size).</li>
+A three-dimensional array of one-hot-encoded sequences with shape (num_seqs, seq_len, alphabet_size). Will be cast to np.uint8 if not already so.</li>
 <li><strong>rng</strong> (Optional[np.random.Generator], optional):
 A NumPy random number generator instance. If None, a new default generator instance will be used.</li>
 <li><strong>verify</strong> (bool, optional):

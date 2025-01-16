@@ -8,7 +8,7 @@ name = "dinuc_shuf"
 crate-type = ["cdylib"]
 
 [dependencies]
-pyo3 = "0.23.3"
+pyo3 = { version = "0.23.3", features = ["extension-module", "abi3-py38"] } 
 num = "0.4.3"
 ndarray = "0.16.1"
 nalgebra = "0.33.2"
